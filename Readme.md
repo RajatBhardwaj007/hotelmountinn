@@ -1,1 +1,1 @@
-Welcome to hotel mount inn!
+Welcome to hotel mount inn!!
