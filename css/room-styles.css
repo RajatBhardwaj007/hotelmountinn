@@ -1,0 +1,395 @@
+/* Room Listing Styles - Compatible with VacayHome theme */
+
+/* Room Container */
+.rooms-container {
+    padding: 40px 0;
+  }
+  
+  .section-title {
+    margin-bottom: 50px;
+  }
+  
+  .section-title .separator {
+    width: 80px;
+    height: 3px;
+    background-color: #fb4f4f;
+    margin: 15px auto;
+  }
+  
+  .section-title .subtitle {
+    color: #666;
+    font-size: 24px;
+    margin-top: 15px;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  /* Room Item */
+  .room-item {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-bottom: 40px;
+  }
+  
+  .room-item:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+  }
+  
+  /* Room Image */
+  .room-image {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .room-image img {
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+  }
+  
+  .room-image:hover img {
+    transform: scale(1.05);
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .room-image:hover .image-overlay {
+    opacity: 1;
+  }
+  
+  .image-overlay span {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+  }
+  
+  /* Room Details */
+  .room-details {
+    padding: 25px;
+  }
+  
+  .room-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 15px;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .room-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #fb4f4f;
+  }
+  
+  /* Amenities */
+  .amenity-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .amenity-item i {
+    font-size: 24px;
+    color: #fb4f4f;
+    margin-bottom: 8px;
+  }
+  
+  .amenity-item span {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #666;
+  }
+  
+  .room-description {
+    margin: 20px 0;
+    color: #666;
+    line-height: 1.7;
+    font-size: 15px;
+  }
+  
+  /* Button Styles - Matching VacayHome */
+  .room-actions .btn {
+    padding: 10px 20px;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-right: 10px;
+  }
+  
+  .room-actions .book-now-btn {
+    background-color: #fb4f4f;
+    color: #fff;
+    border: none;
+  }
+  
+  .room-actions .book-now-btn:hover {
+    background-color: #e83c3c;
+  }
+  
+  .btn-outline-primary {
+    color: #fb4f4f;
+    border: 2px solid #fb4f4f;
+    background-color: transparent;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #fb4f4f;
+    color: #fff;
+  }
+  
+  /* Modal and Carousel Styles */
+  .modal-lg {
+    max-width: 800px;
+  }
+  
+  .modal-content {
+    border-radius: 0;
+    overflow: hidden;
+    border: none;
+  }
+  
+  .modal-header {
+    background-color: transparent;
+    color: #333;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 15px 20px;
+    border-radius: 0;
+  }
+  
+  .modal-header .close {
+    color: #333;
+    opacity: 0.8;
+    text-shadow: none;
+  }
+  
+  .modal-header .close:hover {
+    opacity: 1;
+  }
+  
+  .modal-title {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .carousel-control-prev, 
+  .carousel-control-next {
+    width: 10%;
+    opacity: 0.8;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-size: 50%;
+    background-position: center;
+  }
+  
+  /* Add custom carousel control arrows */
+  .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+  }
+  
+  .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+  }
+  
+  .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .carousel-indicators .active {
+    background-color: #fff;
+  }
+  
+  .modal-footer {
+    border-top: none;
+  }
+  
+  .modal-footer .btn-secondary {
+    background-color: #666;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+  
+  /* Fix for mobile modals */
+  body.modal-open-fix {
+    padding-right: 0 !important;
+    overflow: hidden;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 991px) {
+    .room-details {
+      padding: 20px;
+    }
+    
+    .room-title {
+      font-size: 20px;
+    }
+    
+    .carousel-item img {
+      height: 400px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .section-title .subtitle {
+      font-size: 20px;
+    }
+    
+    .room-image img {
+      height: 280px;
+    }
+    
+    .carousel-item img {
+      height: 350px;
+    }
+    
+    .amenity-item i {
+      font-size: 20px;
+    }
+  
+    .amenity-item span {
+      font-size: 11px;
+    }
+    
+    .room-title {
+      font-size: 18px;
+    }
+    
+    .room-price {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .room-actions .btn {
+      padding: 8px 15px;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+    
+    .carousel-item img {
+      height: 250px;
+    }
+    
+    .room-details {
+      padding: 15px;
+    }
+    
+    .modal-dialog {
+      margin: 10px;
+    }
+  }
+
+  /* Add these styles to your room-styles.css file */
+
+/* Complete rewrite of the banner styling */
+.image-head-wrapper {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.banner-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.banner-img {
+    position: absolute;
+    right: 0; /* Align to the right side */
+    height: 100%;
+    max-width: none; /* Override max-width */
+    min-width: 100%; /* Ensure it covers the container width */
+}
+
+.inner-wrapper {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+    .image-head-wrapper {
+        height: 300px;
+    }
+    
+    .banner-img {
+        right: auto; /* Reset right alignment */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Center technique */
+    }
+    
+    .inner-wrapper h1 {
+        font-size: 2.5rem;
+    }
+}
+  
+  @media (max-width: 480px) {
+    .image-head-wrapper {
+      height: 250px;
+    }
+    
+    .inner-wrapper h1 {
+      font-size: 2rem;
+    }
+  }
