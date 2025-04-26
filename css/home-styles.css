@@ -1,0 +1,560 @@
+/* Home Page Styles CSS for Mountain Inn */
+
+/* General Section Styling */
+section {
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    margin-bottom: 40px;
+  }
+  
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .separator {
+    width: 80px;
+    height: 3px;
+    background-color: #fb4f4f;
+    margin: 15px auto;
+  }
+  
+  .section-title .subtitle {
+    color: #666;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  /* Carousel Styling */
+  .carousel-caption {
+    bottom: 100px;
+  }
+  
+  .carousel-caption h1 {
+    font-size: 48px;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* About Section */
+  .about-section {
+    background-color: #f9f9f9;
+  }
+  
+  .about-text {
+    padding: 20px;
+  }
+  
+  .about-text .lead {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  .about-text p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    color: #555;
+  }
+  
+  .about-image img {
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signature-box {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+  }
+  
+  .signature-img {
+    max-width: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .signature-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  
+  .signature-title {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  /* Featured Rooms Section */
+  .featured-rooms-block {
+    background-color: #fff;
+  }
+  
+  .room-thumbnail {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .room-thumbnail:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .room-img {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+  }
+  
+  .room-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .room-thumbnail:hover .room-img img {
+    transform: scale(1.05);
+  }
+  
+  .room-price {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: rgba(251, 79, 79, 0.9);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 1.2;
+  }
+  
+  .room-price span {
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+  }
+  
+  .room-price small {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  
+  .room-details {
+    padding: 20px;
+  }
+  
+  .room-details h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .room-features {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+  
+  .room-features span {
+    margin-right: 15px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #666;
+  }
+  
+  .room-features span i {
+    margin-right: 5px;
+    color: #fb4f4f;
+  }
+  
+  .view-details-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #f5f5f5;
+    color: #333;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .view-details-btn:hover {
+    background-color: #fb4f4f;
+    color: #fff;
+  }
+  
+  .view-all-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #fb4f4f;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid #fb4f4f;
+  }
+  
+  .view-all-btn:hover {
+    background-color: transparent;
+    color: #fb4f4f;
+  }
+  
+  .mt-40 {
+    margin-top: 40px;
+  }
+  
+  /* Trek Support Section */
+  .trek-support-section {
+    background-color: #f9f9f9;
+  }
+  
+  .trek-image img {
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .trek-text {
+    padding: 20px;
+  }
+  
+  .trek-text h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .trek-text p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    color: #555;
+  }
+  
+  .trek-services-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 25px;
+  }
+  
+  .trek-services-list li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+  }
+  
+  .trek-services-list li i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: #fb4f4f;
+  }
+  
+  .trek-contact-info {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .trek-contact-info h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .trek-contact-info p {
+    margin-bottom: 5px;
+  }
+  
+  .trek-contact-info p i {
+    margin-right: 10px;
+    color: #fb4f4f;
+    width: 15px;
+    text-align: center;
+  }
+  
+  .popular-treks-box {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .popular-treks-box h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .trek-options {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .trek-options span {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    font-size: 13px;
+    color: #555;
+  }
+  
+  /* Testimonials Section */
+  .testimonials-block {
+    padding: 0;
+  }
+  
+  .testimonials-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/gallery/5.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    color: #fff;
+  }
+  
+  .testimonials-block .section-title h2 {
+    color: #fff;
+  }
+  
+  .testimonial-item {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .testimonial-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-author h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .testimonial-author span {
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  #testimonialCarousel .carousel-indicators {
+    bottom: -40px;
+  }
+  
+  #testimonialCarousel .carousel-indicators li {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  #testimonialCarousel .carousel-indicators .active {
+    background-color: #fb4f4f;
+    border-color: #fb4f4f;
+  }
+  
+  /* Location Section */
+  .location-section {
+    background-color: #fff;
+  }
+  
+  .location-text {
+    padding: 20px;
+  }
+  
+  .location-text h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .location-text p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    color: #555;
+  }
+  
+  .location-address {
+    margin-bottom: 20px;
+  }
+  
+  .location-address p {
+    margin-bottom: 5px;
+  }
+  
+  .location-address p i,
+  .distance-info i,
+  .transportation i {
+    margin-right: 10px;
+    color: #fb4f4f;
+    width: 15px;
+    text-align: center;
+  }
+  
+  .distance-info,
+  .transportation {
+    margin-bottom: 20px;
+  }
+  
+  .distance-info h4,
+  .transportation h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .distance-info ul {
+    padding-left: 15px;
+  }
+  
+  .distance-info li {
+    margin-bottom: 5px;
+  }
+  
+  .location-map iframe {
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer Adjustments */
+  .benefits-list {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+  
+  .benefits-list li {
+    margin-bottom: 10px;
+    break-inside: avoid;
+  }
+  
+  .benefits-list li i {
+    color: #fb4f4f;
+    margin-right: 10px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 991px) {
+    .carousel-caption {
+      bottom: 40px;
+    }
+    
+    .carousel-caption h1 {
+      font-size: 36px;
+    }
+    
+    .trek-image img {
+      height: 350px;
+    }
+    
+    .benefits-list {
+      columns: 1;
+      -webkit-columns: 1;
+      -moz-columns: 1;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    section {
+      padding: 40px 0;
+    }
+    
+    .carousel-caption {
+      bottom: 20px;
+    }
+    
+    .carousel-caption h1 {
+      font-size: 28px;
+    }
+    
+    .about-image {
+      margin-top: 30px;
+    }
+    
+    .trek-image {
+      margin-bottom: 30px;
+    }
+    
+    .trek-image img {
+      height: 300px;
+    }
+    
+    .testimonial-content p {
+      font-size: 16px;
+    }
+    
+    .location-map {
+      margin-top: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carousel-caption h1 {
+      font-size: 24px;
+    }
+    
+    .section-title h2 {
+      font-size: 28px;
+    }
+    
+    .trek-image img {
+      height: 250px;
+    }
+    
+    .trek-options span {
+      font-size: 12px;
+    }
+  }
+
+  .vacation-offer-bgbanner {
+    background-image: url('../images/stadium.jpg'); /* You can use any image from your gallery */
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    position: relative;
+}
+
+.vacation-offer-bgbanner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* This creates a dark overlay */
+}
+
+.vacation-offer-details {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    padding: 30px;
+}
