@@ -1,0 +1,107 @@
+/* Contact page specific styles */
+.contact-block {
+    padding: 60px 0;
+}
+
+.contact-block h3 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.contact-block h3 span {
+    color: #fb4f4f;
+}
+
+.contact-left-block {
+    padding-right: 30px;
+}
+
+.contact-left-block p.text-left {
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.contact-left-block p.text-right {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.contact-left-block p.text-right i {
+    color: #fb4f4f;
+    background-color: #ffe6e6;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info, .travel-info {
+    margin-top: 40px;
+}
+
+.contact-info h4, .travel-info h4, .getting-here h4 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.contact-info ul li, .travel-info ul li, .getting-here ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.contact-info ul li i, .travel-info ul li i, .getting-here ul li i {
+    color: #fb4f4f;
+    margin-right: 10px;
+    min-width: 20px;
+    text-align: center;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form .form-control {
+    height: auto;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.contact-form textarea.form-control {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-form .checkbox {
+    margin-bottom: 20px;
+}
+
+.contact-form .submit-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-form .submit-btn:hover {
+    background-color: #fb4f4f;
+}
