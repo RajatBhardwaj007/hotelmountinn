@@ -28,8 +28,12 @@ License URI: http://www.themevault.net/license/
 
 @media (min-width: 768px) and (max-width: 991px) {
     .navbar-default {
-        margin-top: 30px;
+        margin-top: 10px;
         text-align: center;
+    }
+    
+    .top-row {
+        flex-wrap: wrap;
     }
 
     .service-details h4, .overlay p{
@@ -56,6 +60,10 @@ License URI: http://www.themevault.net/license/
 }
 
 @media (max-width: 991px) {
+    #logo {
+        justify-content: center;
+    }
+    
     .service-block .row {
         padding: 0 15px;
     }
@@ -249,9 +257,3 @@ License URI: http://www.themevault.net/license/
         width: 50%;
     }
 }
-
-
-
-
-
-
